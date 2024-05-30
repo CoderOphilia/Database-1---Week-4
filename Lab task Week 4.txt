@@ -1,0 +1,17 @@
+1. SELECT department_id, COUNT(*) AS EmployeeCount
+FROM employees 
+GROUP BY department_id
+HAVING COUNT(*) = 5
+
+2. SELECT Employee_Id, Last_Name, Salary 
+FROM employees
+WHERE Salary > 5000
+
+3. SELECT last_name , hire_date
+FROM employees
+ORDER BY hire_date ASC ;
+
+4. SELECT AVG(Salary) 
+FROM employees
+WHERE Department_Id = 20
+
